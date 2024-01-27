@@ -58,7 +58,7 @@ func main() {
 	repo := sht20.NewRepository(setting)
 
 	if metode == "read" {
-		log.Printf("read id   :%v", idPrev)
+		log.Printf("READ ID   :%v", idPrev)
 		data, err := repo.Read(ctx, idPrev)
 		if err != nil {
 			log.Fatalf("Read:%s", err)
@@ -71,7 +71,7 @@ func main() {
 			fmt.Printf("\n\n")
 		}
 	} else if metode == "write" {
-		log.Printf("change id [%v] to [%v] ", idPrev, idNext)
+		log.Printf("CHANGE ID [%v] to [%v] ", idPrev, idNext)
 		err := repo.Write(ctx, idPrev, idNext)
 		if err != nil {
 			log.Fatalf("Write:%s", err)
