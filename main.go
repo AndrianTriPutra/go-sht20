@@ -67,7 +67,7 @@ func main() {
 		jw, err := json.MarshalIndent(data, " ", " ")
 		if err == nil {
 			msg := string(jw)
-			log.Printf("sht20 :\n%s" + msg)
+			log.Printf("sht20 :\n%s", msg)
 			fmt.Printf("\n\n")
 		}
 	} else if metode == "write" {
